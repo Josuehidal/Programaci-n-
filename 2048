@@ -1,0 +1,16 @@
+#Timer:
+Status=1
+def Timer(x):
+    if(Status==1):
+        if(x<300):
+            print(x)
+            return Timer(x+1)
+        if(x==300):
+            print(x)
+#NickName:
+def Login():
+    Nickname=input("Ingrese su nombre de usuario:")
+    print("Hey", Nickname)
+    text_file = open("NickNames.txt", "w")
+    text_file.write(Nickname)
+    text_file.close()
